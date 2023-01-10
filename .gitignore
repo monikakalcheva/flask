@@ -1,0 +1,5 @@
+*.terraform/
+*.tfstate*
+infrastructure/.terraform/
+#Object file
+*.o
