@@ -33,7 +33,7 @@ pipeline {
                 '''
             }
         }
-       stage("Deploy") {
+       stage("Deploy_Prod") {
           when {
             expression {
                   env.BRANCH_NAME == "main"
