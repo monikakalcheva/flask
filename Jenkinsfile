@@ -41,7 +41,7 @@ pipeline {
           }
             steps {
                 sh '''
-                    helm upgrade flask helm/ --atomic --wait --install --namespace prod --create-namespace --set deployment.tag=$GIT_COMMIT --set deployment.env=prod
+                    helm upgrade flask helm/ --atomic --wait --install --namespace prod --create-namespace --set deployment.tag=$GIT_COMMIT --set deployment.env=prod --debug
                 '''
            }
          }
