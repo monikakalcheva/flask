@@ -45,5 +45,5 @@ kind create cluster --config cluster.yaml
 mkdir -p /var/lib/jenkins/.kube/ 
 kind get kubeconfig > config
 cp config /var/lib/jenkins/.kube/config 
-chown -R jenkins: /var/lib/jenkins 
+chown -R jenkins: /var/lib/jenkins/ 
 chmod 600 /var/lib/jenkins/.kube/config
