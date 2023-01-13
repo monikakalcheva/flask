@@ -17,7 +17,7 @@ systemctl start jenkins
 yum install -y docker
 systemctl start docker
 systemctl enable docker
-sudo usermod -a -G docker jenkins
+sudo usermod -aG docker jenkins
 
 ### KUBEctl and HELM ###
 curl -LO https://dl.k8s.io/release/v1.23.6/bin/linux/amd64/kubectl
